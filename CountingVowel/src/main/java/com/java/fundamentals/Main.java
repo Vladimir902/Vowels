@@ -21,18 +21,12 @@ public class Main {
         else if (numberScanner.hasNextDouble()) {
             System.out.println("The input is a double.");  //if the string is double,handle it
         }
-
-
-
-
-
-        if (userInput.isEmpty()) {   //handling for empty string
-                throw new IllegalArgumentException("Input string cannot be empty.");
+        else if(userInput.isEmpty()) {   //handling for empty string
+            System.out.println("Input string cannot be empty.");
             }
-
+        else {
             System.out.println("The number of vowels are:" + countVowels(userInput)); //printing the sum of the vowels
-
-
+    }
 
     }
 }
